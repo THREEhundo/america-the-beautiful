@@ -1,5 +1,6 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
 module.exports = {
-	content: ["./src/**/*.{html,js}"],
+	content: ["./index.html"],
 	mode: "jit",
 	theme: {
 		extend: {
@@ -7,6 +8,11 @@ module.exports = {
 				"hero-pattern": "url('./day-night.gif')",
 				"footer-texture": "url('/img/footer-texture.png')",
 			},
+			fontFamily: [
+				"national_parkoutline",
+				"national_parkthin",
+				...defaultTheme.fontFamily.serif,
+			],
 			fontSize: {
 				"10xl": "10rem",
 			},

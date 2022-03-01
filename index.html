@@ -8,65 +8,65 @@
 
     <title>America the Beautiful</title>
     <!-- external CSS link -->
-    <link rel="stylesheet" href="/webfontkit-20220301-114248/stylesheet.css" type="text/css" charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./tailwind/output.css">
 </head>
 
-<body class="text-white m-0 h-full w-full">
+<body class="text-white m-0 h-screen w-screen max-w-full">
     <video playsinline autoplay muted loop poster="./img/yellowstone-poster.png" class="z-1 w-screen h-screen object-cover fixed top-0 left-0">
         <source src="./video/yosemite.mp4#t=2" type="video/mp4" id="loop">
         </scource>
 
     </video>
     <section class="h-screen flex justify-start items-center flex-col">
-        <h1 class="text-10xl text-center leading-[0.7] z-20 w-full h-80 pt-6 tracking-wider font-bold">America<span class="block text-5xl leading-snug">the</span><span class="block leading-[0.3]">Beautiful</span></h1>
-        <img class="w-32 z-10 my-auto" src="./img/national-parks-logo.png" alt="National Parks Services Logo">
+        <h1 class="md:text-9xl text-6xl text-center leading-[0.7] z-20 w-full pt-6 tracking-wider font-bold h-auto">America<span class="block md:text-5xl text-3xl leading-snug">the</span><span class="block leading-[0.3]"">Beautiful</span></h1>
+        <img class=" w-32 z-10 my-auto" src="./img/national-parks-logo.png" alt="National Parks Services Logo">
 
-        <ul class="grid grid-cols-2 lg:grid-cols-4 w-full md:w-3/4 z-10 mt-auto lg:w-full gap-4 justify-items-center">
-            <li id="joshua-tree" class="cursor-pointer flex flex-col ml-2 max-w-[250px] aspect-square">
-                <section class="text-white relative mt-1 lg:ml-4">
-                    <div class="wrapper bg-emerald-400">
-                        <div class="flex flex-col btn">
-                            <img src="./img/joshua-tree-emblem.png" alt="Joshua Tree National Park Emblem" class="btn-text">
-                        </div>
-                    </div>
-                </section>
-            </li>
-            <li id="redwood" class="cursor-pointer flex flex-col ml-2 max-w-[250px]">
-                <section class="text-white relative mt-1 lg:ml-4">
-                    <div class="wrapper bg-emerald-400">
-                        <div class="flex flex-col btn">
-                            <img class="btn-text w-[325.008px]" src="./img/redwood-emblem.png" alt="Redwood National Park Emblem" class="btn-text">
-                        </div>
-                    </div>
-                </section>
-            </li>
-            <li id="rocky-mountains" class="cursor-pointer flex flex-col ml-2 max-w-[250px]">
-                <section class="text-white relative mt-1 lg:ml-4">
-                    <div class="wrapper bg-emerald-400">
-                        <div class="flex flex-col btn">
-                            <img class="btn-text" src="./img/rocky-mountain-emblem.png" alt="Rocky Mountains National Park Emblem">
-                        </div>
-                    </div>
-                </section>
-            </li>
-            <li id="yellowstone" class="cursor-pointer flex flex-col ml-2 max-w-[250px]">
-                <section class="text-white relative mt-1 lg:ml-4">
-                    <div class="wrapper bg-emerald-400">
-                        <div class="flex flex-col btn">
-                            <img class="btn-text" src="./img/yellowstone-emblem.png" alt="Yellowstone National Park Emblem">
-                        </div>
-                    </div>
-                </section>
-            </li>
-        </ul>
+                <ul class="grid grid-cols-2 lg:grid-cols-4 w-full md:w-3/4 z-10 mt-auto lg:w-full gap-4 justify-items-center">
+                    <li id="joshua-tree" class="cursor-pointer flex flex-col ml-2 max-w-[250px] aspect-square">
+                        <section class="text-white relative mt-1 lg:ml-4">
+                            <div class="wrapper bg-emerald-400">
+                                <div class="flex flex-col btn">
+                                    <img src="./img/joshua-tree-emblem.png" alt="Joshua Tree National Park Emblem" class="btn-text">
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li id="redwood" class="cursor-pointer flex flex-col ml-2 max-w-[250px]">
+                        <section class="text-white relative mt-1 lg:ml-4">
+                            <div class="wrapper bg-emerald-400">
+                                <div class="flex flex-col btn">
+                                    <img class="btn-text w-[325.008px]" src="./img/redwood-emblem.png" alt="Redwood National Park Emblem" class="btn-text">
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li id="rocky-mountains" class="cursor-pointer flex flex-col ml-2 max-w-[250px]">
+                        <section class="text-white relative mt-1 lg:ml-4">
+                            <div class="wrapper bg-emerald-400">
+                                <div class="flex flex-col btn">
+                                    <img class="btn-text" src="./img/rocky-mountain-emblem.png" alt="Rocky Mountains National Park Emblem">
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li id="yellowstone" class="cursor-pointer flex flex-col ml-2 max-w-[250px]">
+                        <section class="text-white relative mt-1 lg:ml-4">
+                            <div class="wrapper bg-emerald-400">
+                                <div class="flex flex-col btn">
+                                    <img class="btn-text" src="./img/yellowstone-emblem.png" alt="Yellowstone National Park Emblem">
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <figure class="z-10 text-center pb-2 text-national_parkthin">
+                    <figcaption class="w-44">All credit goes to <cite class="text-emerald-400 inline-block"><a id="website-link" href="https://ww.projectyose.com">ProjectYose</a></cite>
+                        <span class="text-emerald-400 inline-block">⇆</span><cite class="text-emerald-400"><a id="youtube-link" href="https://www.youtube.com/watch?v=ZwzY1o_hB5Y">Youtube</a></cite>
+                    </figcaption>
+                </figure>
     </section>
-    <aside class="z-10 text-center"><a class="z-10 text-white" href="https://www.youtube.com/watch?v=ZwzY1o_hB5Y">Support the film maker</a></aside>
+
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
