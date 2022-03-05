@@ -8,4 +8,4 @@ Vast swaths of land, air, and sea for everyone to treasure for all time.
 
 A background picker using time lapse videos on youtube. All credits are linked on the page.
 
-![Uploading Screen Shot 2022-03-02 at 5.08.42 PM.png…](America the Beautiful)
+![America the Beautiful](./img/app%20screen%20shot.png)
